@@ -12,4 +12,9 @@ export class LikesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  likes: number = 0;
+  likeThis() {
+    this.likes++;
+  }
+
 }
