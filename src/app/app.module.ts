@@ -8,6 +8,7 @@ import { LikesComponent } from './likes/likes.component';
 import { ArticleListComponent } from './article-list/article-list.component';
 import { ArticleAddFormComponent } from './article-add-form/article-add-form.component';
 import { NameCardComponent } from './name-card/name-card.component';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { NameCardComponent } from './name-card/name-card.component';
     ArticleListComponent,
     ArticleAddFormComponent,
     NameCardComponent,
+    ProgressBarComponent,
   ],
   imports: [
     BrowserModule,

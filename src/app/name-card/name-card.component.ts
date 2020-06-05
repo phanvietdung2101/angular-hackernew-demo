@@ -13,8 +13,8 @@ export class NameCardComponent implements OnInit {
   }
 
   _cardName: number;
-  @Input() email: string;
-  @Input() phone: string;
+  _email: string;
+  _phone: string;
 
   @Input()
   get cardName(){
@@ -30,4 +30,21 @@ export class NameCardComponent implements OnInit {
     }
   }
 
+  @Input()
+  get email(){
+    return this._email
+  }
+
+  set email(email){
+    this._email = email;
+  }
+
+  @Input()
+  get phone(){
+    return this._phone;
+  }
+
+  set phone(phone){
+    this._phone = phone;
+  }
 }
