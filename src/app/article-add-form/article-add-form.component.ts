@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-article-add-form',
@@ -12,15 +12,17 @@ export class ArticleAddFormComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  @Output()
+  article = new EventEmitter<Object>();
 
   addArticle(){
     let title = <HTMLInputElement> document.getElementById('title');
     let url =  <HTMLInputElement> document.getElementById('url');
-    // this.articles.push(
-    //   {
-    //     title: title.value,
-    //     url: url.value
-    //   }
-    // )
+    this.article.emit(
+      {
+        title: title.value,
+        url: url.value
+      }
+    )
   }
 }

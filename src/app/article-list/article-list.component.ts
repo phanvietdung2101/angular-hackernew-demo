@@ -34,6 +34,12 @@ export class ArticleListComponent implements OnInit {
       url: 'https://ruslanspivak.com/lsbaws-part1/'
     }
   ];
+
+  addArticle(article){
+    this.articles.push(article);
+  }
+
+  
   
 
 }
