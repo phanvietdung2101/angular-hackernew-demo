@@ -1,13 +1,22 @@
-<h2>Today's article</h2>
-<hr>
-<div *ngFor="let art of articles">
-  <a href="{{art.url}}" target="_blank">{{art.title}}</a>
-  <app-likes></app-likes>
+<app-name-card
+  cardName="abc"
+  email="prodev@abc.xyz"
+  phone="0123456789"
+></app-name-card>
+
+<div class="navbar navbar-default">
+  <div class="navbar-nav-scroll">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" [routerLink]="['add-article']"
+          >Add article</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['list-article']">List</a>
+      </li>
+    </ul>
+  </div>
 </div>
-<div>
-  <textarea id="title" cols="70"></textarea>
-  <textarea id="url" cols="70"></textarea>
-  <button (click)='addArticle()'>Add Article</button>
-</div>
-<hr>
-@CodeGym, 2019
+
+<router-outlet></router-outlet>
