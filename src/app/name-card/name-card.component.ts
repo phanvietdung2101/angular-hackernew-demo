@@ -12,9 +12,9 @@ export class NameCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  _cardName: number;
-  _email: string;
-  _phone: string;
+  _cardName: number = 99;
+  _email: string = 'default_email';
+  _phone: string = 'default_phone';
 
   @Input()
   get cardName(){
@@ -43,7 +43,7 @@ export class NameCardComponent implements OnInit {
   get phone(){
     return this._phone;
   }
-
+  
   set phone(phone){
     this._phone = phone;
   }

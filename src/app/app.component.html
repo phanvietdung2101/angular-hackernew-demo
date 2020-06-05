@@ -1,10 +1,3 @@
-<app-progress-bar width="65"></app-progress-bar>
-
-<app-name-card
-  cardName="abc"
-  email="prodev@abc.xyz"
-  phone="0123456789"
-></app-name-card>
 
 <div class="navbar navbar-default">
   <div class="navbar-nav-scroll">
@@ -16,6 +9,13 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" [routerLink]="['list-article']">List</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['card-name']">Card Name</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['progress-bar']"
+        routerLinkActive="router-link-active">Progress Bar</a>
       </li>
     </ul>
   </div>
